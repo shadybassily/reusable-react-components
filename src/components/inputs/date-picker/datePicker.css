@@ -1,0 +1,28 @@
+input[type='date']::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.date-picker-container {
+  width: fit-content;
+  padding: 5px;
+  border: 1px solid #474747;
+  border-radius: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.date-picker-container .date-picker {
+  background-color: transparent;
+  font-size: inherit;
+  outline-style: none;
+  width: 200px;
+  border: none;
+}
+
+.date-picker-container .icon {
+  display: flex;
+  align-items: center;
+}
