@@ -1,8 +1,19 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import { AiOutlineCalendar } from 'react-icons/ai';
 
 import './datePicker.css';
 
-export default function DatePicker({ icon, style, placeholder = 'Select a date', ...otheProps }) {
+export default function DatePicker({
+   icon = <AiOutlineCalendar />,
+   style,
+   placeholder = 'Select a date',
+   ...otheProps
+}) {
+   const [date, setDate] = useState(new Date());
+   const handleDateChange = (e) => {
+      setDate(e.target.value);
+   };
+
    const dateRef = useRef();
    const handleToggle = () => {
       //in order to display the placeholder
@@ -13,15 +24,14 @@ export default function DatePicker({ icon, style, placeholder = 'Select a date',
    };
 
    return (
-      <div className='component'>
-      <h2 className='component-title'>Date Picker</h2>
-         <div className="date-picker-container" style={style}>
+      <div className="date-picker-container" style={style}>
          <input
             className="date-picker"
             type="text"
             ref={dateRef}
             onFocus={handleToggle}
             placeholder={placeholder}
+            onChange={handleDateChange}
             {...otheProps}
          />
 
@@ -30,7 +40,6 @@ export default function DatePicker({ icon, style, placeholder = 'Select a date',
                {icon}
             </div>
          )}
-      </div>
       </div>
    );
 }

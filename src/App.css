@@ -3,17 +3,23 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  
 }
 .component {
-    border-bottom: 1px solid;
-    display: flex;
-    gap:20px;
-    align-items: center;
-    width: 25%;
-    min-width: fit-content;
-    padding: 10px;
+  border-bottom: 1px solid;
+  width: 25%;
+  min-width: fit-content;
+  padding: 20px;
+  transition: 0.2s;
+
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
+.component:hover {
+  box-shadow: 2px 2px 5px gray;
+}
+
 .component-title {
-    color: #2980b9;
+  color: #2980b9;
 }

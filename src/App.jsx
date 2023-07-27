@@ -1,28 +1,32 @@
-import { useState } from 'react';
-import { AiOutlineCalendar } from 'react-icons/ai';
-
 import DatePicker from './components/inputs/date-picker/DatePicker';
 import BracketsButton from './components/buttons/brackets-button/BracketsButton';
+import Spinner from './components/loaders/spinner/Spinner';
 
 import './App.css';
 
+const components = [
+   {
+      title: 'Date Picker',
+      component: <DatePicker />,
+   },
+   {
+      title: 'Brackets Button',
+      component: <BracketsButton />,
+   },
+   {
+      title: 'Spinner',
+      component: <Spinner />,
+   },
+];
 function App() {
-   const [date, setDate] = useState(new Date());
-   const handleDateChange = (e) => {
-      setDate(e.target.value);
-   };
-
-   //do something with the date
-
    return (
       <div className="App">
-         <DatePicker
-            placeholder="Start date"
-            icon={<AiOutlineCalendar />}
-            onChange={handleDateChange}
-            style={{ fontSize: '15px' }}
-         />
-         <BracketsButton />
+         {components.map((c, i) => (
+            <div className="component">
+               <h2 className="component-title">#{i+1} {c.title}</h2>
+               {c.component}
+            </div>
+         ))}
       </div>
    );
 }
