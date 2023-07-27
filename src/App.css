@@ -1,3 +1,19 @@
 .App {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   
+}
+.component {
+    border-bottom: 1px solid;
+    display: flex;
+    gap:20px;
+    align-items: center;
+    width: 25%;
+    min-width: fit-content;
+    padding: 10px;
+}
+.component-title {
+    color: #2980b9;
 }

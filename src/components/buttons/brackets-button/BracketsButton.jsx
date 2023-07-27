@@ -6,8 +6,11 @@ export default function BracketsButtons({ onClick, children = 'click me', ...oth
       // onClick();
    };
    return (
-      <div onClick={handleClick} className="btn">
-         {children}
+      <div className='component'>
+      <h2 className='component-title'>Bracket Button</h2>
+         <div onClick={handleClick} className="btn">
+            {children}
+         </div>
       </div>
    );
 }

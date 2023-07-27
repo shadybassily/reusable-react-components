@@ -13,7 +13,9 @@ export default function DatePicker({ icon, style, placeholder = 'Select a date',
    };
 
    return (
-      <div className="date-picker-container" style={style}>
+      <div className='component'>
+      <h2 className='component-title'>Date Picker</h2>
+         <div className="date-picker-container" style={style}>
          <input
             className="date-picker"
             type="text"
@@ -28,6 +30,7 @@ export default function DatePicker({ icon, style, placeholder = 'Select a date',
                {icon}
             </div>
          )}
+      </div>
       </div>
    );
 }
