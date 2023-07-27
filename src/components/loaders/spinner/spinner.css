@@ -10,7 +10,7 @@
   height: 100%;
   border-radius: 50%;
   position: absolute;
-  border: 7px solid;
+  border: 6px solid;
 }
 
 .loader {
@@ -22,7 +22,7 @@
   border-left-color: transparent;
 
   animation-name: spinningAnimation;
-  /* animation-duration: 1.5s; */
+  animation-duration: 1.2s;
   animation-iteration-count: infinite;
 }
 

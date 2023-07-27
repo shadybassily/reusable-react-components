@@ -8,7 +8,7 @@
   border-bottom: 1px solid;
   width: 25%;
   min-width: fit-content;
-  padding: 20px;
+  padding: 15px;
   transition: 0.2s;
 
   display: flex;
@@ -22,4 +22,10 @@
 
 .component-title {
   color: #2980b9;
+}
+
+@media(max-width: 1500px){
+  .component {
+    width: 35%;
+  }
 }

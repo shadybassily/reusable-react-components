@@ -1,5 +1,6 @@
 import DatePicker from './components/inputs/date-picker/DatePicker';
 import BracketsButton from './components/buttons/brackets-button/BracketsButton';
+import SubmitButton from './components/buttons/submit/Submit';
 import Spinner from './components/loaders/spinner/Spinner';
 import Field from './components/inputs/field/Field';
 
@@ -19,17 +20,22 @@ const components = [
       component: <BracketsButton />,
    },
    {
+      title: 'Submit',
+      component: <SubmitButton />,
+   },
+   {
       title: 'Spinner',
       component: <Spinner />,
    },
-  
 ];
 function App() {
    return (
       <div className="App">
          {components.map((c, i) => (
             <div className="component" key={i}>
-               <h2 className="component-title">#{i+1} {c.title}</h2>
+               <h2 className="component-title">
+                  #{i + 1} {c.title}
+               </h2>
                {c.component}
             </div>
          ))}
