@@ -15,12 +15,12 @@ function App() {
 
    return (
       <div className='App'>
-         {/* <DatePicker
+         <DatePicker
             placeholder="Start date"
             icon={<AiOutlineCalendar />}
             onChange={handleDateChange}
             style={{ fontSize:'15px'}}
-         /> */}
+         />
          <BracketsButton />
       </div>
    );

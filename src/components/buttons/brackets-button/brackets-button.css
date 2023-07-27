@@ -4,7 +4,7 @@
   padding: 15px 40px;
   border-left: 2px solid;
   border-right: 2px solid;
-
+  width: fit-content;
   color: black;
   overflow: hidden;
   text-transform: capitalize;
