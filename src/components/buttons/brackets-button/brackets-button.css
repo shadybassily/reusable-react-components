@@ -1,18 +1,16 @@
-.btn-wrapper {
+.btn {
   cursor: pointer;
   position: relative;
-  width: fit-content;
   padding: 15px 40px;
   border-left: 2px solid;
   border-right: 2px solid;
 
   color: black;
-  margin-top: 15px;
   overflow: hidden;
   text-transform: capitalize;
 }
 
-.btn-wrapper::after {
+.btn::after {
   background: linear-gradient(
     to right,
     black 15%,
@@ -22,7 +20,7 @@
     transparent 85%,
     black 85%
   );
-  transition: 1.5s;
+  transition: 1s;
   content: '';
   height: 2px;
   position: absolute;
@@ -31,7 +29,7 @@
   top: 0;
 }
 
-.btn-wrapper::before {
+.btn::before {
   background: linear-gradient(
     to right,
     black 15%,
@@ -42,7 +40,7 @@
     black 85%
   );
   height: 2px;
-  transition: 1.5s;
+  transition: 1s;
   content: '';
 
   position: absolute;
@@ -51,12 +49,12 @@
   bottom: 0;
 }
 
-.btn-wrapper:hover.btn-wrapper::after {
+.btn:hover.btn::after {
   right: -700%;
   background: linear-gradient( black 100%);
   transition: 1s;
 }
-.btn-wrapper:hover.btn-wrapper::before {
+.btn:hover.btn::before {
   left: -700%;
   background: linear-gradient(to right, black 100%);
   transition: 1s;

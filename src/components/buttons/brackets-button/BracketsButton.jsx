@@ -6,7 +6,7 @@ export default function BracketsButtons({ onClick, children = 'click me', ...oth
       // onClick();
    };
    return (
-      <div onClick={handleClick} className="btn-wrapper">
+      <div onClick={handleClick} className="btn common-style">
          {children}
       </div>
    );
