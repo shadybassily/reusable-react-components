@@ -1,0 +1,27 @@
+.input-holder {
+  position: relative;
+}
+.input-holder input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: transparent;
+}
+.input-holder .label {
+  transition: all 0.3s;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+/* to make sure the effect is on when the user types smt and no focus */
+input:focus + .label,
+input:not(:placeholder-shown) + .label {
+  z-index: 1;
+  position: absolute;
+  background-color: white;
+  left: 5px;
+  top: -10px;
+  padding: 0px 5px;
+}
