@@ -22,7 +22,7 @@
   border-left-color: transparent;
 
   animation-name: spinningAnimation;
-  animation-duration: 1.2s;
+  /* animation-duration: 1.2s; */
   animation-iteration-count: infinite;
 }
 

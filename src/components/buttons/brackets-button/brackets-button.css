@@ -8,6 +8,7 @@
   color: black;
   overflow: hidden;
   text-transform: capitalize;
+  
 }
 
 .btn::after {

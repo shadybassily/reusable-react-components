@@ -1,6 +1,6 @@
 import './brackets-button.css';
 
-export default function BracketsButtons({ onClick, children = 'click me', ...otherProps }) {
+export default function BracketsButtons({ onClick, children = 'Hover me', ...otherProps }) {
    const handleClick = () => {
       console.log('clicked');
       // onClick();

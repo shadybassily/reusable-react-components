@@ -1,8 +1,8 @@
 .App {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  flex-direction: column;
   gap: 10px;
+  flex-wrap: wrap;
 }
 .component {
   border-bottom: 1px solid;
@@ -26,6 +26,6 @@
 
 @media(max-width: 1500px){
   .component {
-    width: 35%;
+    width: 45%;
   }
 }

@@ -1,8 +1,9 @@
 import DatePicker from './components/inputs/date-picker/DatePicker';
+import Field from './components/inputs/field/Field';
+import Search from './components/inputs/search/Search';
 import BracketsButton from './components/buttons/brackets-button/BracketsButton';
 import SubmitButton from './components/buttons/submit/Submit';
 import Spinner from './components/loaders/spinner/Spinner';
-import Field from './components/inputs/field/Field';
 
 import './App.css';
 
@@ -16,11 +17,16 @@ const components = [
       component: <Field />,
    },
    {
+      title: 'Search',
+      component: <Search />,
+   },
+
+   {
       title: 'Brackets Button',
       component: <BracketsButton />,
    },
    {
-      title: 'Submit',
+      title: 'Animating Button',
       component: <SubmitButton />,
    },
    {
