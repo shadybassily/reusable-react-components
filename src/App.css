@@ -5,10 +5,12 @@
 }
 .App {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  width: 95%;
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .title-subtitle-container {

@@ -8,6 +8,7 @@ export default function Search() {
    const [searchContent, setSearchContent] = useState('');
 
    let inputClassNames = `search-input ${isOpen && 'search-input-visible'}`;
+   let searchIconClassNames = `search-icon ${isOpen && 'search-icon-animation'}`
    const handleClick = () => {
       setIsOpen(true);
    };
@@ -26,7 +27,7 @@ export default function Search() {
                value={searchContent}
                onChange={(e) => setSearchContent(e.target.value)}
             />
-         <BsSearch className="search-icon" />
+         <BsSearch className={searchIconClassNames} />
       </div>
    );
 }

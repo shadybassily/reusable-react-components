@@ -1,0 +1,30 @@
+.switch-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  width: 45px;
+  height: 25px;
+  border-radius: 16px;
+  box-shadow: inset 1px 2px 5px black;
+}
+
+.thumb-nail {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #d63031;
+  position: absolute;
+  top: 0%;
+  transition: 0.5s;
+}
+
+.off {
+    transform: translateX(0);
+}
+
+.on {
+  background-color: #0985e3fe;
+  transform: translateX(80%);
+}

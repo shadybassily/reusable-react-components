@@ -6,6 +6,7 @@ import SubmitButton from './components/buttons/submit/Submit';
 import Spinner from './components/loaders/spinner/Spinner';
 
 import './App.css';
+import Switch from './components/switchs/Switch';
 
 const components = [
    {
@@ -33,6 +34,10 @@ const components = [
       title: 'Spinner',
       component: <Spinner />,
    },
+   {
+      title: 'Switch',
+      component: <Switch />,
+   },
 ];
 function App() {
    return (
@@ -45,7 +50,7 @@ function App() {
                <h2 className="component-title">
                   #{i + 1} {c.title}
                </h2>
-               <div className='component-content'>{c.component}</div>
+               <div className="component-content">{c.component}</div>
             </div>
          ))}
       </div>
