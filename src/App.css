@@ -1,17 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.title-subtitle-container {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+:where(.app-title, .app-subtitle) {
+  padding: 10px;
+}
+.app-subtitle {
+  border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 25px;
 }
 .component {
   border-bottom: 1px solid;
-  width: 25%;
   min-width: fit-content;
   padding: 15px;
   transition: 0.2s;
+  width: 100%;
 
   display: flex;
+  flex-direction: column;
   gap: 20px;
   align-items: center;
   justify-content: space-between;
@@ -23,8 +49,13 @@
 .component-title {
   color: #2980b9;
 }
+.component-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-@media(max-width: 1500px){
+@media (min-width: 1000px) {
   .component {
     width: 45%;
   }

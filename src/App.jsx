@@ -37,12 +37,15 @@ const components = [
 function App() {
    return (
       <div className="App">
+         <div className="title-subtitle-container">
+            <h1 className="app-title">Reusable React Components</h1>
+         </div>
          {components.map((c, i) => (
             <div className="component" key={i}>
                <h2 className="component-title">
                   #{i + 1} {c.title}
                </h2>
-               {c.component}
+               <div className='component-content'>{c.component}</div>
             </div>
          ))}
       </div>

@@ -5,8 +5,10 @@
   overflow: hidden;
   cursor: pointer;
   font-size: 18px;
+
   width: 120px;
   height: 40px;
+  
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -17,8 +19,9 @@
   background-color: transparent;
   border: none;
   text-transform: capitalize;
-  transform: translateY(40px);
+  transform: translateY(17px);
   font-size: 18px;
+  color: black;
 }
 .done {
   transform: translateY(30px);
@@ -40,24 +43,20 @@
 
 @keyframes containerAnimation {
   0% {
-    transform: translateX(0);
     border-radius: 5px;
     width: 120px;
   }
   50% {
-    transform: translateX(-40px);
     border-radius: 100%;
     width: 40px;
     color: green;
   }
   70% {
-    transform: translateX(-40px);
     border-radius: 100%;
     width: 40px;
     color: green;
   }
   100% {
-    transform: translateX(0);
     border-radius: 5px;
     width: 120px;
   }
@@ -65,7 +64,7 @@
 
 @keyframes btnAnimation {
   0% {
-    transform: translateY(40px);
+    transform: translateY(17px);
   }
   50% {
     transform: translateY(-30px);
@@ -74,7 +73,7 @@
     transform: translateY(-30px);
   }
   100% {
-    transform: translateY(40px);
+    transform: translateY(17px);
   }
 }
 

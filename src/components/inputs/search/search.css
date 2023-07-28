@@ -11,6 +11,7 @@
   border: none;
   width: 0px;
   transition: 0.5s;
+  font-size: 15px;
 }
 
 .search-input-visible {

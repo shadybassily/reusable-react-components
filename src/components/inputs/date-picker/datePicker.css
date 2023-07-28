@@ -19,7 +19,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   background-color: transparent;
   font-size: inherit;
   outline-style: none;
-  width: 200px;
+  width: 250px;
   border: none;
   padding: 5px;
 }
