@@ -9,10 +9,7 @@ import './App.css';
 import Switch from './components/switchs/Switch';
 
 const components = [
-   {
-      title: 'Date Picker',
-      component: <DatePicker />,
-   },
+   
    {
       title: 'Field',
       component: <Field />,
@@ -37,6 +34,10 @@ const components = [
    {
       title: 'Switch',
       component: <Switch />,
+   },
+   {
+      title: 'Date Picker',
+      component: <DatePicker />,
    },
 ];
 function App() {

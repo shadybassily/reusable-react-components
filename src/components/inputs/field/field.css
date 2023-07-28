@@ -8,9 +8,10 @@
   border-radius: 5px;
   background-color: transparent;
   width: 250px;
+  font-size: 18px;
 }
 .input-holder .label {
-  transition: all 0.3s;
+  transition: all 0.5s;
   position: absolute;
   left: 7%;
   top: 30%;
