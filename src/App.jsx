@@ -1,16 +1,18 @@
 import DatePicker from './components/inputs/date-picker/DatePicker';
 import Field from './components/inputs/field/Field';
 import Search from './components/inputs/search/Search';
+
 import BracketsButton from './components/buttons/brackets-button/BracketsButton';
 import SubmitButton from './components/buttons/submit/Submit';
+import AddToCart from './components/buttons/add-to-cart/AddToCart';
+
 import Spinner from './components/loaders/spinner/Spinner';
+import Dots from './components/loaders/dots/Dots';
+import Switch from './components/switchs/Switch';
 
 import './App.css';
-import Switch from './components/switchs/Switch';
-import Dots from './components/loaders/dots/Dots';
 
 const components = [
-   
    {
       title: 'Field',
       component: <Field />,
@@ -25,8 +27,12 @@ const components = [
       component: <BracketsButton />,
    },
    {
-      title: 'Animating Button',
+      title: 'Submit Button',
       component: <SubmitButton />,
+   },
+   {
+      title: 'Add To Cart',
+      component: <AddToCart />,
    },
    {
       title: 'Spinner',

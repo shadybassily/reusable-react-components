@@ -8,7 +8,7 @@
 
   width: 120px;
   height: 40px;
-  
+
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -65,12 +65,15 @@
 @keyframes btnAnimation {
   0% {
     transform: translateY(17px);
+    visibility: hidden;
   }
   50% {
     transform: translateY(-30px);
+    visibility: hidden;
   }
   70% {
     transform: translateY(-30px);
+    display: block;
   }
   100% {
     transform: translateY(17px);
