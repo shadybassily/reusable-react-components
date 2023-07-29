@@ -1,6 +1,6 @@
 .btn-container {
   background-color: transparent;
-  border: 2px solid;
+  border: 2px solid var(--primary);
   border-radius: 6px;
   overflow: hidden;
   cursor: pointer;
@@ -21,7 +21,7 @@
   text-transform: capitalize;
   transform: translateY(17px);
   font-size: 18px;
-  color: black;
+  color: var(--primary);
 }
 .done {
   transform: translateY(30px);
@@ -49,12 +49,12 @@
   50% {
     border-radius: 100%;
     width: 40px;
-    color: green;
+    color: var(--primary);
   }
   70% {
     border-radius: 100%;
     width: 40px;
-    color: green;
+    color: var(--primary);
   }
   100% {
     border-radius: 5px;

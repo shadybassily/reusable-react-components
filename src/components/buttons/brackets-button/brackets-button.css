@@ -5,21 +5,20 @@
   border-left: 2px solid;
   border-right: 2px solid;
   width: fit-content;
-  color: black;
+  color: var(--primary);
   overflow: hidden;
   text-transform: capitalize;
-  
 }
 
 .btn::after {
   background: linear-gradient(
     to right,
-    black 15%,
+    var(--primary) 15%,
     transparent 15%,
     transparent 50%,
     transparent 50%,
     transparent 85%,
-    black 85%
+    var(--primary) 85%
   );
   transition: 1s;
   content: '';
@@ -28,18 +27,17 @@
   right: 0;
   left: 0;
   top: 0;
-
 }
 
 .btn::before {
   background: linear-gradient(
     to right,
-    black 15%,
+    var(--primary) 15%,
     transparent 15%,
     transparent 50%,
     transparent 50%,
     transparent 85%,
-    black 85%
+    var(--primary) 85%
   );
   height: 2px;
   transition: 1s;
@@ -53,11 +51,9 @@
 
 .btn:hover.btn::after {
   right: -700%;
-  background: linear-gradient( black 100%);
   transition: 1s;
 }
 .btn:hover.btn::before {
   left: -700%;
-  background: linear-gradient(to right, black 100%);
   transition: 1s;
 }

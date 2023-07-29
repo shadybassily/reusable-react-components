@@ -18,7 +18,7 @@
 }
 
 .spinner {
-  border-color: #2980b9;
+  border-color: var(--primary);
   border-left-color: transparent;
 
   animation-name: spinningAnimation;

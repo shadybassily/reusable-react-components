@@ -20,6 +20,8 @@
 }
 .search-icon-animation {
   transform: rotate(0);
+  color: var(--primary);
+
 }
 
 .search-input-visible {

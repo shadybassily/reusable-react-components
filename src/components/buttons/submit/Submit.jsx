@@ -17,7 +17,7 @@ export default function Submit() {
    return (
       <div className={containerClassName} onClick={handleClick}>
          <button type="submit" className={btClassName}>
-            click
+            submit
          </button>
          <p className={doneClassName}>&#x2713;</p>
       </div>

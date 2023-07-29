@@ -1,3 +1,6 @@
+:root {
+  --primary: #2980b9;
+}
 * {
   padding: 0;
   margin: 0;
@@ -49,7 +52,7 @@
 }
 
 .component-title {
-  color: #2980b9;
+  color: var(--primary);
 }
 .component-content {
   width: 100%;

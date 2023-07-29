@@ -7,6 +7,7 @@ import Spinner from './components/loaders/spinner/Spinner';
 
 import './App.css';
 import Switch from './components/switchs/Switch';
+import Dots from './components/loaders/dots/Dots';
 
 const components = [
    
@@ -30,6 +31,10 @@ const components = [
    {
       title: 'Spinner',
       component: <Spinner />,
+   },
+   {
+      title: 'Loading Dots',
+      component: <Dots />,
    },
    {
       title: 'Switch',
