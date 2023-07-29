@@ -14,7 +14,7 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background-color: #d63031;
+  background-color: #a4b0be;
   position: absolute;
   top: 0%;
   transition: 0.5s;
@@ -25,6 +25,6 @@
 }
 
 .on {
-  background-color: #0985e3fe;
-  transform: translateX(80%);
+  background-color: #09b342;
+  transform: translateX(78%);
 }
